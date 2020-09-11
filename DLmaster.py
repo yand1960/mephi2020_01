@@ -1,0 +1,1 @@
+print ("Hello Дима from master")

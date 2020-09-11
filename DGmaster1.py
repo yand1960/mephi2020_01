@@ -1,0 +1,1 @@
+print("Hello Dmitry from Master")

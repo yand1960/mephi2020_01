@@ -1,0 +1,1 @@
+print ("Hello Дима from experiment1")

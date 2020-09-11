@@ -1,0 +1,1 @@
+print("Hello, Zavalenova Polina from master")

@@ -1,3 +1,6 @@
 Hello, I am Yuri!
 Something new on master
+Changes 1
+Experiment 1
+Remote repository is ready
 Again on master

@@ -1,1 +1,1 @@
-print("Hello, Zavalenova Polina from master")
+print("Hello, Zavalenova Polina from master ")

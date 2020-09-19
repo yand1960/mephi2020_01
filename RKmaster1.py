@@ -1,0 +1,1 @@
+print('Hello Roman Kuramshin from master')

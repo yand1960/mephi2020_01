@@ -1,0 +1,51 @@
+body {
+	background-color: #d2d2c9;
+}
+
+
+h1 {
+	border: 2px solid;
+	border-color: #673e37;
+	border-radius: 5px;
+	text-align: center;
+	font: 200% sans-serif;
+	background-color: #bda68f;
+	color: #6d031c;
+}
+
+h2 {
+	border: 2px solid;
+	border-color: #673e37;
+	border-radius: 5px;
+	text-align: center;
+	font: 150% sans-serif;
+	background-color: #bda68f;
+	color: #6d031c;
+}
+
+p {
+	font: 115% sans-serif;
+	color: #6d031c;
+}
+
+
+.list ol {
+	list-style-position: inside;
+	-moz-column-count: 2; /* Firefox */
+	-webkit-column-count: 2; /* Safari and Chrome */
+	column-count: 2;
+	list-style-type: decimal;
+	height: 200px;
+	font: 115% sans-serif;
+	color: #6d031c;
+}
+
+table, td, tr {
+	border: 1px solid;
+	border-color: #673e37;
+	border-radius: 5px;
+	text-align: center;
+	font: 100% sans-serif;
+	background-color: #bfb5aa;
+	color: #6d031c;
+}

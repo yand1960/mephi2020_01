@@ -1,0 +1,36 @@
+a{
+  margin-right: 15px;
+   margin-left: 15px;
+}
+button{
+  background:#FFA07A;
+  padding: 10px 20px;
+  cursor:pointer;
+  outline:none;
+  border:none;
+  border-radius:3px;
+  color:#fff;
+  font-size:15px;}
+button:hover{
+  background:#CD5C5C;
+  transition: 1s;
+}
+td{
+  padding:15px;
+   text-align:left;}
+table {
+  width: 70%;
+   border-collapse: separate;
+   border-spacing: 4px;}
+table thead tr {
+  color: #ffffff;
+}
+table thead tr td {
+  border-radius: 4px 4px 0 0;
+  background: #2e82c3;
+  background: #20B2AA;
+}
+td:hover {
+  background: #FFA07A;
+   transition-duration: 0.2s;
+ }

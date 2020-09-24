@@ -1,0 +1,126 @@
+#header{
+	text-align: center;
+	height: 150px;
+	padding-top: 200px;
+	background-image: url("https://isralove.org/_ld/2/38478270.jpg");
+	/*background-color: red;*/
+}
+
+h1{
+	color: white;
+	font-size: 3.8em;
+	background-color: #4A2B21;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+#content{
+	text-align: center;
+	height: 450px;
+	padding-top: 50px;
+}
+
+#content h2{
+	font-size: 2.5em;
+	color: #4A2B21;
+}
+
+.description{
+	display: inline-block;
+	/*border: 1px solid black;*/
+	width: 320px;
+	font-size: 2em;
+}
+
+#div2{
+	margin-left: 80px;
+}
+
+#div3{
+	margin-left: 80px;
+}
+
+#link-block h3{
+	font-size: 2.5em;
+	color: #4A2B21;
+}
+
+#link-block li{
+	list-style: none;
+	padding: 12px;
+}
+
+#about-block{
+	height: 700px;
+	background-color: #E5E0DE;
+}
+#about-block div{
+	width: 500px;
+	font-size: 2.2em;
+	display: inline-block;
+}
+
+#oc{
+	font-weight: bold;
+	font-size: 2.4em;
+	color: #4A2B21;
+}
+
+#about-block img{
+	width: 500px;
+}
+
+#about-block div:first-child{
+	margin-left: 400px;
+	margin-top: 150px;
+}
+
+#about-block div:last-child{
+	float: right;
+	margin-right: 400px;
+	margin-top: 50px;
+}
+
+
+#link-block{
+	background-color: #E5E0DE;
+	text-align: center;
+	padding-top: 50px;
+	height: 600px;
+}
+
+#link-block a{
+	font-size: 2em;
+	color: black;
+}
+
+#link-block a:hover{
+	color: #DAA180;
+}
+
+#table-block{
+	height: 1000px;
+}
+
+#table-block table{
+	border-collapse: collapse;
+	width: 1300px;
+	margin: auto;
+}
+#table-block h2{
+	text-align: center;
+	font-size: 2.5em;
+	color: #4A2B21;
+}
+
+#table-block td{
+	border: 1px solid black;
+	padding: 10px;
+	font-size: 1.3em;
+}
+
+.headline{
+	text-align: center;
+	font-weight: bold;
+	font-size: 3em;
+}

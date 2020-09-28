@@ -1,0 +1,42 @@
+<html>
+	<head>
+	<title> Ya JS </title>
+	<script>
+
+	{ 
+	
+	}
+		function plus(){
+			var x,y,z;
+			x = document.getElementById("txtX").value;
+			y = document.getElementById("txtY").value;
+			z = parseInt(x) + parseInt(y) ; 
+			document.getElementById("txtZ").value =z;
+			document.getElementById("btn_pls").style.background = "pink";
+			document.getElementById("btn_minus").style.background = "#808080";
+			}
+		function minus(){
+			var x,y,z;
+			x = document.getElementById("txtX").value;
+			y = document.getElementById("txtY").value;
+			z = parseInt(x) - parseInt(y) ; 
+			document.getElementById("txtZ").value =z;
+			document.getElementById("btn_minus").style.background = "pink";
+			document.getElementById("btn_pls").style.background = "#808080";
+		}
+	</script>
+	</head>
+	<style>
+	button{
+	background:#808080;
+	}
+	</style>
+	<body>
+	<h1 id = "hdrl"> DR calc</h1>
+	<input type = "text" id = "txtX" /> <br />
+	<input type = "text" id = "txtY" /> <br />
+	<button onclick = "plus();" id = "btn_pls">+</button>
+	<button onclick = "minus();" id = "btn_minus">-</button> <br />
+	<input type = "text" id = "txtZ" />
+	</body>		
+</html>

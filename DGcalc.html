@@ -1,0 +1,38 @@
+<html>
+	<head>
+		<title>DG Calc</title>
+		<style>
+			.style_in_use{
+				background-color: HotPink;
+			}
+			</style>
+		<script>
+			function plus() {
+				var x,y,z;
+				x = document.getElementById("txtX").value;
+				y = document.getElementById("txtY").value;
+				z = parseInt(x) + parseInt(y);
+				document.getElementById("txtZ").value = z;
+				document.getElementById("add").classList.add("style_in_use");
+				document.getElementById("subtract").classList.remove("style_in_use");
+			}
+			function minus(){
+				var x,y,z;
+				x = document.getElementById("txtX").value;
+				y = document.getElementById("txtY").value;
+				z = parseInt(x) - parseInt(y);
+				document.getElementById("txtZ").value = z;
+				document.getElementById("subtract").classList.add("style_in_use");
+				document.getElementById("add").classList.remove("style_in_use");
+			}
+		</script>
+	</head>
+	<body>
+		<h1>DG calc</h1>
+		<input type="text" id="txtX"/> <br />
+		<input type="text" id="txtY" /> <br />
+		<button onclick="plus();" id="add";>+</button>
+		<button onclick="minus();" id="subtract";>-</button> <br />
+		<input type="text" id="txtZ"/>
+	</body>
+</html>

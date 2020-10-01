@@ -1,0 +1,33 @@
+<html>
+	<head>
+		<title>SK7 Calc</title>
+		<script>
+			function plus() {
+				var x,y,z;
+				x = document.getElementById("txtX").value;
+				y = document.getElementById("txtY").value;
+				z = parseInt(x) + parseInt(y);
+				document.getElementById("txtZ").value = z;
+				document.getElementById("plus").style.background = "#FFC0CB";
+				document.getElementById("minus").style.background = "#e6e6e6";
+			}
+			function minus(){
+				var x,y,z;
+				x = document.getElementById("txtX").value;
+				y = document.getElementById("txtY").value;
+				z = parseInt(x) - parseInt(y) ; 
+				document.getElementById("txtZ").value = z;
+				document.getElementById("minus").style.background = "#FFC0CB";
+				document.getElementById("plus").style.background = "#e6e6e6";
+			}			
+		</script>
+	</head>
+	<body>
+		<h1>SK7 Calc</h1>
+		<input type="text" id="txtX" /> <br />
+		<input type="text" id="txtY" /> <br />
+		<button onclick="plus();" id="plus">+</button>
+		<button onclick="minus();" id="minus">-</button> <br />
+		<input type="text" id="txtZ" />
+	</body>
+</html>

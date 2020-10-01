@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SK1 Calc</title>
+	<style>
+		div{
+			border: 1px solid black;
+			text-align: center;
+			padding: 50px;
+			width: 300px;
+		}
+
+		button{
+			width: 40px;
+			height: 40px;
+		}
+
+		#b_plus{
+			margin-right: 20px;
+		}
+
+		.pink_button{
+			background-color: pink;
+		}
+	</style>
+	<script>
+		function plus(){
+			var x,y,z;
+			x = document.getElementById("txtX").value;
+			y = document.getElementById("txtY").value;
+			z = parseInt(x) + parseInt(y);
+			document.getElementById("txtZ").value = z;
+			document.getElementById("b_plus").classList.add("pink_button");
+			document.getElementById("b_minus").classList.remove("pink_button");
+		}
+
+		function minus(){
+			var x,y,z;
+			x = document.getElementById("txtX").value;
+			y = document.getElementById("txtY").value;
+			z = parseInt(x) - parseInt(y);
+			document.getElementById("txtZ").value = z;
+			document.getElementById("b_minus").classList.add("pink_button");
+			document.getElementById("b_plus").classList.remove("pink_button");
+		}
+	</script>
+</head>
+<body>
+	<h1>SK1 Calc</h1>
+	<div>
+		<label for="txtX">Number 1: </label><input type="text" id="txtX"><br><br>
+		<label for="txtY">Number 2: </label><input type="text" id="txtY"><br><br>
+		<button onclick="plus()" id="b_plus">+</button>
+		<button onclick="minus()" id="b_minus">-</button><br><br>
+		<label for="txtZ">Result : </label><input type="text" id="txtZ">
+    </div>
+</body>
+</html>

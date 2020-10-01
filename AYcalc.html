@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>AY_calc</title>
+        
+        <script>
+         //   alert("world");
+         function plus(){
+            document.getElementById("btnr").style.background="white"
+            var x,y,z;
+            x=document.getElementById("xb").value;
+            y=document.getElementById("yb").value;
+            z=parseInt(x)+parseInt(y);
+            document.getElementById("zb").value=z;
+            document.getElementById("xbr").style.background="pink"
+         }
+         function minus(){
+            document.getElementById("xbr").style.background="white"
+            var x,y,z;
+            x=document.getElementById("xb").value;
+            y=document.getElementById("yb").value;
+            z=parseInt(x)-parseInt(y);
+            document.getElementById("zb").value=z;
+            document.getElementById("btnr").style.background="pink"
+         }
+        </script>
+    </head>
+    <body>
+        <h1 id="hdrl">calc</h1>
+        <input type="text" id="xb" /><br/>
+        <input type="text" id="yb" /><br/>
+        <button onclick ="plus();" id="xbr" >+</button>
+        <button onclick ="minus();" id="btnr" >-</button>
+        <input type="text" id="zb" />
+    <body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <style>
+    input{margin:15px;
+    width: 200px;
+  height: 25px;}
+    button{background:#fff;
+    padding:5x;
+    margin-left:20px;
+    width: 50px;
+    height: 50px;
+  font-size: 16px;}
+  #txtZ{
+    background:#FAFAD2
+  }
+  </style>
+  <script>
+    function plus(){
+      var x, y, z;
+      x = document.getElementById('txtX').value;
+      y = document.getElementById('txtY').value;
+      z = parseInt(x) + parseInt(y);
+      z = document.getElementById('txtZ').value = z;
+      document.getElementById('btnPlus').style.background = '#FFA07A';
+      document.getElementById('btnMinus').style.background = '#FFF';
+    }
+    function minus(){
+      var x, y, z;
+      x = document.getElementById('txtX').value;
+      y = document.getElementById('txtY').value;
+      z = parseInt(x) - parseInt(y);
+      z = document.getElementById('txtZ').value = z;
+      document.getElementById('btnPlus').style.background = '#FFF';
+      document.getElementById('btnMinus').style.background = '#FFA07A';
+    }
+
+  </script>
+  <title>VV calc</title>
+</head>
+<body>
+  <div style="margin:60px; border-radius:5px; border:3px solid #FFA07A; padding:20px; display:inline-block; box-shadow: 7px 7px 10px 0px rgba(50, 50, 50, 0.53);">
+    <h1>VV calc</h1>
+    <input type="text" id="txtX"><br>
+    <input type="text" id="txtY"><br>
+    <button onclick="plus()" id="btnPlus">+</button>
+    <button onclick="minus()" id='btnMinus'>-</button><br>
+    <input type="text" id="txtZ">
+  </div>
+
+</body>
+</html>

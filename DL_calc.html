@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>DL Calc</title>
+		<style>
+			.b1 {
+			
+				background-color:  rgb(216, 216, 216);
+	
+			}
+			.b2 {
+				background-color:  rgb(216, 216, 216);
+			}
+		</style>
+		<script>
+			function plus() {
+				var x,y,z;
+				x = document.getElementById("txtX").value;
+				y =  document.getElementById("txtY").value;
+				z = parseInt(x) + parseInt(y)
+				document.getElementById("txtZ").value = z;
+				//document.getElementById("btn4").className = "b1";
+				document.getElementById("btn4").style.background = "DeepPink";
+				document.getElementById("btn2").style.background = "rgb(216, 216, 216)";
+				
+				
+				
+			}
+			function minus() {
+				var x,y,z;
+				x = document.getElementById("txtX").value;
+				y =  document.getElementById("txtY").value;
+				z = parseInt(x) - parseInt(y)
+				document.getElementById("txtZ").value = z;
+				//document.getElementById("btn2").className = "b2";
+				document.getElementById("btn2").style.background = "DeepPink";
+				document.getElementById("btn4").style.background = "rgb(216, 216, 216)";
+			}
+			
+			
+		</script>
+	</head>
+	<body>
+		<h1>Calculator</h1>
+		<input type="text" id="txtX"/> <br />
+		<input type="text" id="txtY"/> <br />
+		<button onclick="plus();" id="btn4">+</button>
+		<button onclick="minus();"id="btn2">-</button> <br />
+		<input type="text" id="txtZ"/>
+	</body>
+</html>

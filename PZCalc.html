@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>PZ Calc</title>
+         <style>
+             .style1{
+                 background-color: lightpink;
+             }
+         </style>
+        <script>
+            function plus() {
+                var x, y, z;
+                x = document.getElementById("txtX").value;
+                y = document.getElementById("txtY").value;
+                z = parseInt(x) + parseInt(y);
+                document.getElementById("txtZ").value = z;
+                document.getElementById("btn_plus").classList.add("style1");
+                document.getElementById("btn_minus").classList.remove("style1");
+            }
+            function minus(){
+                x = document.getElementById("txtX").value;
+                y = document.getElementById("txtY").value;
+                z = parseInt(x) - parseInt(y);
+                document.getElementById("txtZ").value = z;
+                document.getElementById("btn_minus").classList.add("style1");
+                document.getElementById("btn_plus").classList.remove("style1");
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Сalculator of Polina Zavalenova</h1>
+        <input type = "text" id = "txtX"/><br/>
+        <input type = "text" id = "txtY"/><br/>
+        <button onclick = "plus();" id = "btn_plus">+</button>
+        <button onclick = "minus();" id = "btn_minus">-</button><br/>
+        <input type = "text" id = "txtZ"/>
+    </body>
+</html>

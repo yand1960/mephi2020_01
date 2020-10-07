@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<style> 
+			button {
+			background: white; 
+			}
+		</style>
+		<title>AR Calc</title>
+		<p></p>
+		<script>
+			function plus() {
+				var x,y,z;
+				x = document.getElementById("txtX").value;
+				y = document.getElementById("txtY").value;
+				z = parseInt(x) + parseInt(y);
+				document.getElementById("txtZ").value = z;
+				document.getElementById("btn_plus").style.background = "pink";
+				document.getElementById("btn_minus").style.background = "white";
+			}
+		</script>
+		<p></p>
+		<script>
+			function minus() {
+				var x,y,z;
+				x = document.getElementById("txtX").value;
+				y = document.getElementById("txtY").value;
+				z = parseInt(x) - parseInt(y);
+				document.getElementById("txtZ").value = z;
+				document.getElementById("btn_minus").style.background = "pink";
+				document.getElementById("btn_plus").style.background = "white";
+			}
+		</script>
+	</head>
+	<body>
+		<center><h1>AR Calc</h1>
+		<input type="text" id="txtX"/> <br />
+		<p></p>
+		<input type="text" id="txtY"/> <br />
+		<p></p>
+		<button id="btn_plus" onclick="plus()" style="border:1px solid red; padding:10px 20px; border-radius:5px; box-shadow:8px 6px 9px 0px rgba(50, 52, 50, 0.6)">+</button> <br />
+		<p></p>
+		<button id="btn_minus" onclick="minus()" style="border:1px solid red; padding:10px 20px; border-radius:5px; box-shadow:8px 6px 9px 0px rgba(50, 52, 50, 0.6)">-</button> <br />
+		<p><p>
+		<input type="text" id="txtZ"/></center>
+	</body>
+</html>

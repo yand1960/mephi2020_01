@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>PO Calc</title>
+        <style>
+            button {
+                background: grey;
+            }
+        </style>
+		<script>
+			function plus() {
+				var x, y;
+				x = document.getElementById("first").value;
+				y = document.getElementById("second").value;
+
+                document.getElementById("result").value = parseInt(x) + parseInt(y);
+				document.getElementById("plus").style.background = "pink";
+				document.getElementById("minus").style.background = "grey";
+			}
+
+			function minus(){
+				var x, y;
+				x = document.getElementById("first").value;
+				y = document.getElementById("second").value;
+
+                document.getElementById("result").value = parseInt(x) - parseInt(y);
+				document.getElementById("minus").style.background = "pink";
+				document.getElementById("plus").style.background = "grey";
+			}
+		</script>
+	</head>
+	<body>
+		<h1>PO Calc</h1>
+		<input type="text" id="first"/><br/>
+		<input type="text" id="second"/><br/>
+		<button onclick="plus();" id="plus">+</button>
+		<button onclick="minus();" id="minus">-</button><br/>
+		<input type="text" id="result"/>
+	</body>
+</html>

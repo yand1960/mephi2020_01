@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>ABcalc</title>
+	<style>
+		button{
+			background:#d4d4d4;
+    		}
+    	</style>
+	<script>
+		function plus() {
+			var x, y, z;
+			x = document.getElementById("a").value;
+			y = document.getElementById("b").value;
+			z = parseInt(x)+ parseInt(y);
+			document.getElementById("c").value = z;
+			document.getElementById("p").style.background = "pink"; 
+			document.getElementById("m").style.background = "#d4d4d4"; 
+		}
+		function minus() {
+			var x, y, z;
+			x = document.getElementById("a").value;
+			y = document.getElementById("b").value;
+			z = parseInt(x) - parseInt(y);
+			document.getElementById("c").value = z;
+			document.getElementById("p").style.background = "#d4d4d4"; 
+			document.getElementById("m").style.background = "pink"; 
+		}
+	</script>
+</head>
+<body>
+	<h1>AB Calc</h1>
+	<input type="text" id="a"> </br>
+	<input type="text" id="b"> </br>
+	<button onclick="plus();" id="p">+</button> </br>
+	<button onclick="minus();" id="m">-</button> </br>
+	<input type="text" id="c"> </br>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>RK calc</title>
+		<script>
+			function plus() {
+				document.getElementById("+").style.background = "pink";
+				document.getElementById("-").style.background = "none";
+				let x,y,z;
+				x = document.getElementById("txtX").value;
+				y = document.getElementById("txtY").value;
+				z = parseInt(x) + parseInt(y);
+				document.getElementById("txtZ").value = z;
+			}
+			function minus() {
+				document.getElementById("-").style.background = "pink";
+				document.getElementById("+").style.background = "none";
+				let x,y,z;
+				x = document.getElementById("txtX").value;
+				y = document.getElementById("txtY").value;
+				z = parseInt(x) - parseInt(y);
+				document.getElementById("txtZ").value = z;
+			}
+			
+		</script>
+	</head>
+	<body>
+		<h1>YA Calc</h1>
+		<input type="text" id="txtX" /> <br />
+		<input type="text" id="txtY" /> <br />
+		<button id="+" onclick="plus();">+</button>
+		<button id="-" onclick="minus()">-</button> <br />
+		<input type="text" id="txtZ" />
+	</body>
+</html>
